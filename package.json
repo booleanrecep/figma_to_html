@@ -8,7 +8,7 @@
     "server": "nodemon server.js",
     "client": "cd ./client && webpack-dev-server --open --mode development --config webpack.config.js",
     "wp:start": "",
-    "wp:build": "cd ./client && webpack --watch --mode production --config webpack.config.js"
+    "wp:build": "cd ./client && webpack --mode production --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
