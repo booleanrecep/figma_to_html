@@ -21,6 +21,21 @@ const App = () => {
             <img src={file} />
             <img src={more} />
           </div>
+          <div className="message-body">
+            <div className="sent-message">
+              <img src={p} />
+              <p>
+                Hello! Finally found the time to write to you) I need your help
+                in creating interactive animations for my mobile application.
+              </p>
+              {/* <span>...</span> */}
+              <p>
+              Can I send you files?
+              </p>
+              {/* <span>...</span> */}
+            </div>
+            <div className="incoming-message  "></div>
+          </div>
           <div className="input-area">
             <img src={addicons} />
             <hr />
