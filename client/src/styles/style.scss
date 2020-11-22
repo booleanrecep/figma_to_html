@@ -88,6 +88,7 @@ $base-font: TT Norms;
 }
 
 .rightside {
+
   position: relative;
   left: 20em;
   width: 100%;
@@ -442,7 +443,6 @@ $base-font: TT Norms;
         // left: 1130px;
         // top: 250px;
 
-       
         img {
           width: 5em;
           height: 5em;
@@ -450,24 +450,23 @@ $base-font: TT Norms;
           // background: red;
           margin-bottom: -2.5em;
         }
-        span{
+        span {
           // margin-top: -5em;
           font-size: 2em;
           position: relative;
-          left:13em;
-          top:-2.5em;
-          color: #B7BDCB;
-
+          left: 13em;
+          top: -2.5em;
+          color: #b7bdcb;
         }
         p {
           // po
-          display:inline-block;
+          display: inline-block;
           // clear:both;
           // float:left;
           background: linear-gradient(90.54deg, #60a9f6 0%, #2a8bf2 100%);
           /* Shadow Block Message My Opponent */
           border-radius: 0px 10px 10px 10px;
-  
+
           box-shadow: 10px 10px 25px rgba(42, 139, 242, 0.1),
             15px 15px 35px rgba(42, 139, 242, 0.05),
             10px 10px 50px rgba(42, 139, 242, 0.1);
@@ -479,7 +478,7 @@ $base-font: TT Norms;
           // top: 50;
           margin-top: -1.5em;
           margin-left: 5em;
-          padding:0.7em;
+          padding: 0.7em;
           font-family: TT Norms;
           font-size: 13px;
           line-height: 18px;
@@ -488,6 +487,32 @@ $base-font: TT Norms;
           // text-transform: uppercase;
 
           color: #ffffff;
+        }
+      }
+
+      .incoming-message {
+        position: relative;
+        left:17em;
+        top:3em;
+        p {
+          border-radius: 10px 10px 0px 10px;
+
+          padding:0.8em;
+          background: #FFFFFF;
+          border: 1px solid rgba(112, 124, 151, 0.25);
+          box-sizing: border-box;
+          /* Shadow My Messages */
+          
+          box-shadow: 10px 10px 25px rgba(112, 124, 151, 0.05), 15px 15px 35px rgba(112, 124, 151, 0.05);
+          font-family: TT Norms;
+          font-size: 14px;
+          line-height: 18px;
+          /* or 162% */
+
+          display: inline-block;
+          align-items: center;
+
+          color: #707c97;
         }
       }
     }

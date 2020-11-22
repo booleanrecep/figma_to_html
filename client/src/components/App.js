@@ -29,12 +29,35 @@ const App = () => {
                 in creating interactive animations for my mobile application.
               </p>
               {/* <span>...</span> */}
-              <p>
-              Can I send you files?
+              <p>Can I send you files?</p>
+              {/* <span>...</span> */}
+            </div>
+            <div className="incoming-message  ">
+              <p>Hey ! Okay, send out.</p>
+            </div>
+            <div className="sent-message">
+              <img src={p} />
+              <p
+                style={{
+                  marginLeft: "-1em",
+                  marginTop: "3em",
+                }}
+              >
+                {" "}
+                &#9993; Style.zip
               </p>
               {/* <span>...</span> */}
             </div>
-            <div className="incoming-message  "></div>
+            <div className="incoming-message  ">
+              <p style={{
+                  marginLeft:"-6.5em",
+                  width:"18em"
+              }}>
+
+                Hello! I tweaked everything you asked. I am sending the finished
+                file.
+              </p>
+            </div>
           </div>
           <div className="input-area">
             <img src={addicons} />
