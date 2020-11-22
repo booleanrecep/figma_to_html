@@ -30,8 +30,8 @@ $base-font: TT Norms;
   top: 3em;
   left: 4em;
   width: 18%;
-  .user{
-    img:first-of-type{
+  .user {
+    img:first-of-type {
       width: 4.5em;
       height: 4.5em;
     }
@@ -114,7 +114,7 @@ $base-font: TT Norms;
         line-height: 20px;
         display: flex;
         align-items: center;
-        letter-spacing:s 0.01em;
+        letter-spacing: s 0.01em;
         text-transform: capitalize;
         color: #0d1c2e;
         margin-bottom: 0.4em;
@@ -122,7 +122,7 @@ $base-font: TT Norms;
       p:last-of-type {
         font-family: TT Norms;
         font-size: 14px;
-        line-height:10px;
+        line-height: 10px;
         display: flex;
         align-items: center;
         text-transform: capitalize;
@@ -190,7 +190,7 @@ $base-font: TT Norms;
         border: white;
         font-family: TT Norms;
         font-size: 16px;
-        line-height:20px;
+        line-height: 20px;
         display: flex;
         align-items: center;
         text-transform: capitalize;
@@ -278,7 +278,7 @@ $base-font: TT Norms;
             margin-top: -2em;
             padding-left: 0.7em;
             width: 14px;
-            height:20px;
+            height: 20px;
             font-family: TT Norms;
             font-size: 10px;
             line-height: 10px;
@@ -330,43 +330,105 @@ $base-font: TT Norms;
     height: 96%;
     width: 30em;
     // border: 2px solid red;
+    .top {
+      height: 5em;
+      background: #fafbff;
+      border-radius: 6px 6px 0px 0px;
+      img:first-of-type {
+        width: 8em;
+        height: 8em;
+        margin: -1.5em;
+        cursor: pointer;
+        // background: red;
+      }
+      img:nth-of-type(2) {
+        // background: red;
+        width: 5em;
+        height: 5em;
+        position: absolute;
+        top: 0em;
+        right: 3em;
+        cursor: pointer;
 
+        // margin-top: -16em;
+        // margin-left: 22em;
+      }
+      img:last-of-type {
+        // margin-bottom: 5em;
+        cursor: pointer;
+
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 5em;
+        height: 5em;
+        margin: -1em;
+      }
+
+      p:first-of-type {
+        font-family: TT Norms;
+        font-size: 15px;
+        line-height: 18px;
+        // display: flex;
+        // align-items: center;
+        text-align: left;
+        text-transform: capitalize;
+        color: #0d1c2e;
+        margin-top: -4.5em;
+        margin-left: 5em;
+      }
+      p:last-of-type {
+        font-family: TT Norms;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        margin-left: 6.5em;
+        margin-top: -0.5em;
+
+        // display: flex;
+        align-items: center;
+        text-align: left;
+        text-transform: lowercase;
+
+        color: #2a8bf2;
+      }
+    }
     .input-area {
       position: absolute;
       bottom: 1em;
-    }
-    img:first-of-type {
-      margin-bottom: -4em;
-    }
-    img:last-of-type {
-      position: absolute;
-      bottom: -1.3em;
-      right: -2.5em;
-    }
-    hr {
-      width: 24em;
-      height: 0.07em;
-      margin-left: 4em;
-      background: rgba(112, 124, 151, 0.15);
-      border-radius: 2px;
-    }
-    input {
-      margin-left: 2em;
-      padding-left: 2em;
-      height: 3em;
-      width: 70%;
-      margin-left: 3em;
-      border: none;
-      font-family: TT Norms;
-      font-size: 16px;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      text-transform: capitalize;
-      color: #707c97;
+      img:first-of-type {
+        margin-bottom: -4em;
+      }
+      img:last-of-type {
+        position: absolute;
+        bottom: -1.3em;
+        right: -2.5em;
+      }
+      hr {
+        width: 24em;
+        height: 0.07em;
+        margin-left: 4em;
+        background: rgba(112, 124, 151, 0.15);
+        border-radius: 2px;
+      }
+      input {
+        margin-left: 2em;
+        padding-left: 2em;
+        height: 3em;
+        width: 70%;
+        margin-left: 3em;
+        border: none;
+        font-family: TT Norms;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #707c97;
 
-      &:focus {
-        outline: none;
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
