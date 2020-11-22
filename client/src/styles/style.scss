@@ -1,0 +1,366 @@
+@font-face {
+  font-family: Tinos;
+  src: url("../fonts/Tinos/Tinos-Regular.ttf");
+}
+
+@font-face {
+  font-family: Tinos Regular;
+  src: url("../fonts/Tinos/Tinos-Italic.ttf");
+}
+
+@font-face {
+  font-family: TT Norms;
+  src: url("../fonts/TT-Norms/TTNorms-Regular.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+$base-font: TT Norms;
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.leftside-panel {
+  position: fixed;
+  top: 3em;
+  left: 6em;
+  width: 20%;
+
+  h6 {
+    position: absolute;
+    width: 170px;
+    top: 3.5em;
+    left: -2em;
+    font-family: $base-font;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #0d1c2e;
+  }
+
+  .leftside-tabs ul {
+    position: relative;
+    left: -5em;
+    top: 2em;
+    list-style-type: none;
+  }
+  .leftside-tabs ul li {
+    // padding: 1em;
+
+    font-family: $base-font;
+    font-size: 16px;
+    line-height: 3em;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 2em;
+    &:hover {
+      color: #2a8bf2;
+    }
+    &:last-of-type {
+      margin-top: 5em;
+    }
+    img {
+      width: 2em;
+      height: 2em;
+      margin-right: 1em;
+      margin-bottom: -0.6em;
+      filter: grayscale(1);
+      &:hover {
+        filter: grayscale(0);
+        color: #2a8bf2;
+      }
+    }
+  }
+}
+
+.rightside {
+  position: relative;
+  left: 25em;
+  width: 100%;
+  height: 100%;
+  padding-left: 3em;
+  background: linear-gradient(180deg, #eee 800%, #e5e5e5 100%);
+  .middle-div {
+    position: relative;
+    top: 1.5em;
+    width: 40em;
+    height: 100%;
+    overflow: scroll;
+
+    .top {
+      // background-color: aqua;
+      // filter: blur(2em);
+      position: fixed;
+      z-index: 10;
+      p:first-of-type {
+        margin-right: 15em;
+        font-family: TT Norms;
+        font-size: 36px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+        color: #0d1c2e;
+        margin-bottom: 0.4em;
+      }
+      p:last-of-type {
+        font-family: TT Norms;
+        font-size: 18px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #707c97;
+      }
+      .create {
+        position: absolute;
+        top: 1em;
+        right: 0;
+        width: 210px;
+        height: 60px;
+        background: linear-gradient(92.68deg, #7cb8f7 0%, #2a8bf2 100%);
+        box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15),
+          4px 4px 25px rgba(42, 139, 242, 0.05),
+          10px 6px 25px rgba(42, 139, 242, 0.15);
+        border-radius: 6px;
+        text-align: center;
+        justify-content: center;
+        padding-left: 1em;
+        p {
+          width: 210px;
+          font-family: TT Norms;
+          font-size: 20px;
+          line-height: 24px;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .search {
+      position: fixed;
+      z-index: 10;
+      margin-top: 7em;
+      width: 40em;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 1em;
+      height: 70px;
+      background: #ffffff;
+      border: 1px solid aqua;
+      border-radius: 6px;
+      i {
+        margin: 1.5em 0 0.5em 1em;
+      }
+      p {
+        position: absolute;
+        top: 1em;
+        right: 1.5em;
+        font-family: TT Norms;
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #707c97;
+        margin: 0.1em 0 0.5em 1em;
+      }
+      input {
+        width: 10em;
+        margin-left: 3em;
+        border: none;
+        border: white;
+        font-family: TT Norms;
+        font-size: 18px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #707c97;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .message-card {
+      // overflow: scroll;
+      // filter: blur(1em);
+
+      margin-top: 1em;
+      height: 11em;
+
+      background: #ffffff;
+      border-radius: 10px;
+      img {
+        width: 54px;
+        height: 54px;
+        margin: 1.5em;
+      }
+
+      .message-head {
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        p:first-of-type {
+          font-family: TT Norms;
+          font-size: 18px;
+          line-height: 21px;
+          margin-left: -5em;
+          margin-top: 1.5em;
+          width: 85px;
+          align-items: left;
+          text-align: left;
+          text-transform: capitalize;
+
+          color: #0d1c2e;
+          span {
+            font-family: TT Norms;
+            font-size: 16px;
+            line-height: 19px;
+            margin-top: 0.8em;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: lowercase;
+            width: 163px;
+            color: #2a8bf2;
+          }
+        }
+
+        p:last-of-type {
+          font-family: TT Norms;
+          font-size: 16px;
+          line-height: 19px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          text-transform: lowercase;
+          margin-top: 2em;
+          margin-left: 10em;
+          color: #707c97;
+        }
+      }
+
+      .message-body {
+        height: 78px;
+        margin-left: 5em;
+        font-family: TT Norms;
+        font-size: 16px;
+        line-height: 26px;
+        align-items: center;
+        margin-top: -2em;
+        margin-bottom: 0.5em;
+        color: #707c97;
+
+        p {
+          width: 450px;
+          span {
+            margin-left: 38em;
+            margin-top: -5em;
+            padding-left: 1em;
+            width: 20px;
+            height: 30px;
+            font-family: TT Norms;
+            font-size: 13px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: lowercase;
+            background: #ff3366;
+            color: #ffffff;
+            border-radius: 20px;
+          }
+        }
+
+        .files {
+          position: relative;
+          width: 15em;
+          left: 0em;
+          top: 1em;
+          div:first-of-type {
+            margin-right: 1em;
+            display: inline-block;
+            height: 2em;
+            width: 5em;
+            text-align: center;
+            color: #2a8bf2;
+            background: rgba(42, 139, 242, 0.25);
+            border-radius: 20px;
+          }
+          div:last-of-type {
+            margin-right: 1em;
+            display: inline-block;
+            height: 2em;
+            width: 5em;
+            text-align: center;
+            color: #ff3366;
+            background: rgba(255, 51, 102, 0.25);
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-div {
+    position: fixed;
+    right: 3em;
+    background: #ffffff;
+    top: 1.5em;
+    height: 96%;
+    width: 40em;
+    // border: 2px solid red;
+
+    .input-area {
+      position: absolute;
+      bottom: 1em;
+    }
+    img:first-of-type {
+      margin-bottom: -3em;
+    }
+    img:last-of-type {
+      position: absolute;
+      bottom: -0.5em;
+      right: -2.5em;
+    }
+    hr {
+      width: 30em;
+      height: 0.07em;
+      margin-left: 5em;
+      background: rgba(112, 124, 151, 0.15);
+      border-radius: 2px;
+    }
+    input {
+      margin-left: 2em;
+      padding-left: 2em;
+      height: 4em;
+      width: 70%;
+      margin-left: 3em;
+      border: none;
+      font-family: TT Norms;
+      font-size: 18px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      color: #707c97;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
