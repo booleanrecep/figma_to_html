@@ -14,7 +14,7 @@ const LeftPanel = () => {
       <div className="leftside-panel">
         <div className="user">
           <img src={user} />
-          <h6>Henry Jabbawockiez</h6><img src={chevrondown} style={{marginBottom:"-1.9em",marginLeft:"2.5em"}} />
+          <h6>Henry Jabbawockiez</h6><img src={chevrondown} style={{marginBottom:"-1.5em",marginLeft:"2.5em"}} />
         </div>
         <div className="leftside-tabs">
           <ul>

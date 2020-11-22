@@ -6,18 +6,29 @@ import search from "../assets/icons/search.png";
 const MessagesMiddleSection = () => {
   return (
     <div className="middle-div">
+    
       <div
         style={{
-          width: "41em",
-          height: "14em",
+          width: "24.1em",
+          height: "9em",
           //   border: "2px solid red",
           // filter: "blur(0em)",
           backgroundColor: "#efeded",
           position: "fixed",
           top: "-0.1em",
-          left: "27.6em",
           zIndex: "5",
-          //   backdropFilter: 32,
+        }}
+      ></div>
+      <div
+        style={{
+          width: "24.1em",
+          height: "2em",
+          filter: "blur(1em)",
+          backgroundColor: "#efeded",
+          // backgroundColor: "aqua",
+          position: "fixed",
+          top: "9.4em",
+          zIndex: "5",
         }}
       ></div>
       <div className="top">
@@ -33,14 +44,14 @@ const MessagesMiddleSection = () => {
         <input placeholder="🔍  Search" />
         <p>
           Messages
-          <img src={chevrondown} style={{ marginLeft: "0.4em" }} />
+          <img src={chevrondown} style={{ marginLeft: "0.7em" }} />
         </p>
       </div>
 
       <div
         style={{
           // filter: "blur(1em)",
-          marginTop: "13em",
+          marginTop: "10em",
         }}
       >
         <div className="message-card">

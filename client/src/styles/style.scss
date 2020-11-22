@@ -28,17 +28,22 @@ $base-font: TT Norms;
 .leftside-panel {
   position: fixed;
   top: 3em;
-  left: 6em;
-  width: 20%;
-
+  left: 4em;
+  width: 18%;
+  .user{
+    img:first-of-type{
+      width: 4.5em;
+      height: 4.5em;
+    }
+  }
   h6 {
     position: absolute;
     width: 170px;
-    top: 3.5em;
-    left: -2em;
+    top: 3em;
+    left: -2.5em;
     font-family: $base-font;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 0.9em;
+    line-height: 1em;
     display: flex;
     align-items: center;
     text-align: center;
@@ -56,8 +61,8 @@ $base-font: TT Norms;
     // padding: 1em;
 
     font-family: $base-font;
-    font-size: 16px;
-    line-height: 3em;
+    font-size: 0.8em;
+    // line-height: 1.5em;
     text-align: left;
     text-transform: uppercase;
     cursor: pointer;
@@ -69,8 +74,8 @@ $base-font: TT Norms;
       margin-top: 5em;
     }
     img {
-      width: 2em;
-      height: 2em;
+      width: 1.5m;
+      height: 1.5em;
       margin-right: 1em;
       margin-bottom: -0.6em;
       filter: grayscale(1);
@@ -84,7 +89,7 @@ $base-font: TT Norms;
 
 .rightside {
   position: relative;
-  left: 25em;
+  left: 20em;
   width: 100%;
   height: 100%;
   padding-left: 3em;
@@ -92,31 +97,32 @@ $base-font: TT Norms;
   .middle-div {
     position: relative;
     top: 1.5em;
-    width: 40em;
+    width: 23.9em;
     height: 100%;
     overflow: scroll;
 
     .top {
       // background-color: aqua;
       // filter: blur(2em);
+      // margin-left: 0.7em;
       position: fixed;
       z-index: 10;
       p:first-of-type {
-        margin-right: 15em;
+        margin-right: 12.5em;
         font-family: TT Norms;
-        font-size: 36px;
-        line-height: 26px;
+        font-size: 25px;
+        line-height: 20px;
         display: flex;
         align-items: center;
-        letter-spacing: 0.01em;
+        letter-spacing:s 0.01em;
         text-transform: capitalize;
         color: #0d1c2e;
         margin-bottom: 0.4em;
       }
       p:last-of-type {
         font-family: TT Norms;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 14px;
+        line-height:10px;
         display: flex;
         align-items: center;
         text-transform: capitalize;
@@ -126,8 +132,8 @@ $base-font: TT Norms;
         position: absolute;
         top: 1em;
         right: 0;
-        width: 210px;
-        height: 60px;
+        width: 150px;
+        height: 40px;
         background: linear-gradient(92.68deg, #7cb8f7 0%, #2a8bf2 100%);
         box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15),
           4px 4px 25px rgba(42, 139, 242, 0.05),
@@ -137,10 +143,10 @@ $base-font: TT Norms;
         justify-content: center;
         padding-left: 1em;
         p {
-          width: 210px;
+          width: 200px;
           font-family: TT Norms;
-          font-size: 20px;
-          line-height: 24px;
+          font-size: 16px;
+          line-height: 10px;
           color: #ffffff;
           display: flex;
           align-items: center;
@@ -153,37 +159,38 @@ $base-font: TT Norms;
     .search {
       position: fixed;
       z-index: 10;
-      margin-top: 7em;
-      width: 40em;
+      margin-top: 5em;
+      width: 24em;
+      // margin-left: -em;
       display: grid;
       grid-template-columns: auto auto;
       grid-gap: 1em;
-      height: 70px;
+      height: 50px;
       background: #ffffff;
       border: 1px solid aqua;
       border-radius: 6px;
       i {
-        margin: 1.5em 0 0.5em 1em;
+        margin: 0.5em 0 0.5em 0.5em;
       }
       p {
         position: absolute;
-        top: 1em;
+        top: 1.2em;
         right: 1.5em;
         font-family: TT Norms;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 14px;
+        line-height: 20px;
         text-transform: capitalize;
         color: #707c97;
         margin: 0.1em 0 0.5em 1em;
       }
       input {
-        width: 10em;
-        margin-left: 3em;
+        width: 6em;
+        margin-left: 1.5em;
         border: none;
         border: white;
         font-family: TT Norms;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height:20px;
         display: flex;
         align-items: center;
         text-transform: capitalize;
@@ -199,14 +206,14 @@ $base-font: TT Norms;
       // filter: blur(1em);
 
       margin-top: 1em;
-      height: 11em;
+      height: 9em;
 
       background: #ffffff;
       border-radius: 10px;
       img {
-        width: 54px;
-        height: 54px;
-        margin: 1.5em;
+        width: 50px;
+        height: 50px;
+        margin: 0.7em;
       }
 
       .message-head {
@@ -215,9 +222,9 @@ $base-font: TT Norms;
 
         p:first-of-type {
           font-family: TT Norms;
-          font-size: 18px;
-          line-height: 21px;
-          margin-left: -5em;
+          font-size: 14px;
+          line-height: 15px;
+          margin-left: -3em;
           margin-top: 1.5em;
           width: 85px;
           align-items: left;
@@ -227,8 +234,8 @@ $base-font: TT Norms;
           color: #0d1c2e;
           span {
             font-family: TT Norms;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 13px;
+            line-height: 15px;
             margin-top: 0.8em;
             display: flex;
             align-items: center;
@@ -241,40 +248,40 @@ $base-font: TT Norms;
 
         p:last-of-type {
           font-family: TT Norms;
-          font-size: 16px;
-          line-height: 19px;
+          font-size: 12px;
+          line-height: 15px;
           display: flex;
           align-items: center;
           text-align: center;
           text-transform: lowercase;
-          margin-top: 2em;
+          margin-top: 0em;
           margin-left: 10em;
           color: #707c97;
         }
       }
 
       .message-body {
-        height: 78px;
-        margin-left: 5em;
+        height: 68px;
+        margin-left: 4em;
         font-family: TT Norms;
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 12px;
+        line-height: 14px;
         align-items: center;
         margin-top: -2em;
         margin-bottom: 0.5em;
         color: #707c97;
 
         p {
-          width: 450px;
+          width: 310px;
           span {
-            margin-left: 38em;
-            margin-top: -5em;
-            padding-left: 1em;
-            width: 20px;
-            height: 30px;
+            margin-left: 30em;
+            margin-top: -2em;
+            padding-left: 0.7em;
+            width: 14px;
+            height:20px;
             font-family: TT Norms;
-            font-size: 13px;
-            line-height: 15px;
+            font-size: 10px;
+            line-height: 10px;
             display: flex;
             align-items: center;
             text-align: center;
@@ -321,7 +328,7 @@ $base-font: TT Norms;
     background: #ffffff;
     top: 1.5em;
     height: 96%;
-    width: 40em;
+    width: 30em;
     // border: 2px solid red;
 
     .input-area {
@@ -329,30 +336,30 @@ $base-font: TT Norms;
       bottom: 1em;
     }
     img:first-of-type {
-      margin-bottom: -3em;
+      margin-bottom: -4em;
     }
     img:last-of-type {
       position: absolute;
-      bottom: -0.5em;
+      bottom: -1.3em;
       right: -2.5em;
     }
     hr {
-      width: 30em;
+      width: 24em;
       height: 0.07em;
-      margin-left: 5em;
+      margin-left: 4em;
       background: rgba(112, 124, 151, 0.15);
       border-radius: 2px;
     }
     input {
       margin-left: 2em;
       padding-left: 2em;
-      height: 4em;
+      height: 3em;
       width: 70%;
       margin-left: 3em;
       border: none;
       font-family: TT Norms;
-      font-size: 18px;
-      line-height: 26px;
+      font-size: 16px;
+      line-height: 20px;
       display: flex;
       align-items: center;
       text-transform: capitalize;
